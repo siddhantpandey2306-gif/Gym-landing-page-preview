@@ -1,0 +1,1344 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>[GYM NAME] - Premium Fitness Center & Modern Gym</title>
+  
+  <!-- SEO & Social Meta Tags -->
+  <meta name="description" content="Transform your fitness at [GYM NAME]. Modern equipment, expert certified trainers, customized workout programs, and an energizing community to help you build your strongest self.">
+  <meta name="keywords" content="gym, fitness center, personal training, strength training, weight loss, workout, gym membership">
+  <meta name="author" content="[GYM NAME]">
+  <meta property="og:title" content="[GYM NAME] | Build Your Strongest Self">
+  <meta property="og:description" content="Premium fitness center with world-class facilities, personalized coaching, and flexible memberships. Join today or enquire on WhatsApp.">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="https://images.unsplash.com/photo-1534438327276-14e5300c3a48?auto=format&fit=crop&w=1200&q=80">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800;900&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- ==============================================
+       HEADER / NAVBAR
+       ============================================== -->
+  <header class="site-header" id="siteHeader">
+    <div class="container nav-container">
+      <a href="#home" class="brand-logo" aria-label="Gym Home">
+        <span class="logo-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M6 5v14M18 5v14M2 9v6M22 9v6M6 12h12M2 12h4M18 12h4" />
+          </svg>
+        </span>
+        <span class="logo-text">[GYM <span class="text-accent">NAME</span>]</span>
+      </a>
+
+      <!-- Desktop Navigation Menu -->
+      <nav class="nav-menu" id="navMenu" aria-label="Main Navigation">
+        <ul class="nav-list">
+          <li><a href="#home" class="nav-link active">Home</a></li>
+          <li><a href="#about" class="nav-link">About</a></li>
+          <li><a href="#why-us" class="nav-link">Why Us</a></li>
+          <li><a href="#programs" class="nav-link">Programs</a></li>
+          <li><a href="#facilities" class="nav-link">Facilities</a></li>
+          <li><a href="#trainers" class="nav-link">Trainers</a></li>
+          <li><a href="#membership" class="nav-link">Membership</a></li>
+          <li><a href="#contact" class="nav-link">Contact</a></li>
+        </ul>
+      </nav>
+
+      <!-- Right Header Actions -->
+      <div class="nav-actions">
+        <button type="button" class="btn btn-primary nav-cta-btn" id="navJoinBtn">Join Now</button>
+        <button class="hamburger-btn" id="hamburgerBtn" aria-label="Open navigation menu" aria-expanded="false" aria-controls="mobileDrawer">
+          <span class="bar bar-1"></span>
+          <span class="bar bar-2"></span>
+          <span class="bar bar-3"></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Drawer Menu -->
+  <div class="mobile-drawer" id="mobileDrawer" aria-hidden="true">
+    <div class="mobile-drawer-header">
+      <span class="logo-text">[GYM <span class="text-accent">NAME</span>]</span>
+      <button class="drawer-close-btn" id="drawerCloseBtn" aria-label="Close navigation menu">&times;</button>
+    </div>
+    <ul class="mobile-nav-list">
+      <li><a href="#home" class="mobile-nav-link">Home</a></li>
+      <li><a href="#about" class="mobile-nav-link">About</a></li>
+      <li><a href="#why-us" class="mobile-nav-link">Why Us</a></li>
+      <li><a href="#programs" class="mobile-nav-link">Programs</a></li>
+      <li><a href="#facilities" class="mobile-nav-link">Facilities</a></li>
+      <li><a href="#trainers" class="mobile-nav-link">Trainers</a></li>
+      <li><a href="#membership" class="mobile-nav-link">Membership</a></li>
+      <li><a href="#timings" class="mobile-nav-link">Gym Timings</a></li>
+      <li><a href="#contact" class="mobile-nav-link">Contact</a></li>
+    </ul>
+    <div class="mobile-drawer-cta">
+      <button type="button" class="btn btn-primary btn-block" id="mobileJoinBtn">Join Now</button>
+      <button type="button" class="btn btn-whatsapp-outline btn-block" id="mobileWhatsappBtn">
+        <svg class="icon-inline" viewBox="0 0 24 24" fill="currentColor">
+          <path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91C2.13 13.66 2.59 15.36 3.45 16.86L2.05 22L7.3 20.62C8.75 21.41 10.38 21.83 12.04 21.83C17.5 21.83 21.95 17.38 21.95 11.92C21.95 9.27 20.92 6.78 19.05 4.91C17.18 3.03 14.69 2 12.04 2M12.05 3.67C14.25 3.67 16.31 4.53 17.87 6.09C19.42 7.65 20.28 9.72 20.28 11.92C20.28 16.46 16.58 20.15 12.04 20.15C10.56 20.15 9.11 19.76 7.85 19L7.55 18.83L4.43 19.65L5.26 16.61L5.06 16.29C4.24 14.99 3.81 13.47 3.81 11.91C3.81 7.37 7.5 3.67 12.05 3.67M9.13 7.39C8.95 7.39 8.76 7.4 8.59 7.41C8.36 7.42 8.16 7.5 8 7.73C7.79 7.96 7.21 8.5 7.21 9.61C7.21 10.72 8.02 11.78 8.13 11.94C8.24 12.1 9.71 14.36 11.96 15.33C13.83 16.14 14.21 15.98 14.62 15.94C15.03 15.9 15.95 15.39 16.14 14.86C16.33 14.33 16.33 13.88 16.27 13.78C16.21 13.68 16.06 13.62 15.83 13.5C15.6 13.38 14.47 12.83 14.26 12.75C14.05 12.67 13.9 12.63 13.75 12.86C13.6 13.09 13.17 13.62 13.04 13.78C12.91 13.94 12.78 13.96 12.55 13.84C12.32 13.72 11.58 13.48 10.7 12.7C10.01 12.09 9.55 11.33 9.42 11.11C9.29 10.88 9.4 10.76 9.52 10.64C9.62 10.53 9.75 10.36 9.87 10.22C9.98 10.08 10.02 9.98 10.1 9.82C10.18 9.66 10.14 9.53 10.08 9.41C10.02 9.29 9.57 8.18 9.38 7.72C9.2 7.28 9.02 7.34 8.87 7.34L8.59 7.34H9.13Z"/>
+        </svg>
+        WhatsApp Us
+      </button>
+    </div>
+  </div>
+  <div class="drawer-overlay" id="drawerOverlay"></div>
+
+  <!-- ==============================================
+       HERO SECTION
+       ============================================== -->
+  <section class="hero-section" id="home">
+    <div class="hero-backdrop"></div>
+    <div class="container hero-content">
+      <div class="hero-badge animate-fade-in">
+        <span class="badge-dot"></span>
+        <span>YOUR FITNESS. YOUR STRONGER SELF.</span>
+      </div>
+
+      <h1 class="hero-title animate-slide-up">
+        BUILD YOUR <span class="gradient-text">STRONGEST</span> SELF
+      </h1>
+
+      <p class="hero-subtitle animate-slide-up delay-1">
+        Train smarter, get stronger and become the best version of yourself with expert guidance, modern equipment and a motivating fitness community.
+      </p>
+
+      <div class="hero-cta-group animate-slide-up delay-2">
+        <a href="#membership" class="btn btn-primary btn-large">
+          <span>Join Now</span>
+          <svg class="icon-inline" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+            <path d="M5 12h14M12 5l7 7-7 7"/>
+          </svg>
+        </a>
+        <button type="button" class="btn btn-whatsapp btn-large js-whatsapp-hero">
+          <svg class="icon-inline" viewBox="0 0 24 24" fill="currentColor">
+            <path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91C2.13 13.66 2.59 15.36 3.45 16.86L2.05 22L7.3 20.62C8.75 21.41 10.38 21.83 12.04 21.83C17.5 21.83 21.95 17.38 21.95 11.92C21.95 9.27 20.92 6.78 19.05 4.91C17.18 3.03 14.69 2 12.04 2M12.05 3.67C14.25 3.67 16.31 4.53 17.87 6.09C19.42 7.65 20.28 9.72 20.28 11.92C20.28 16.46 16.58 20.15 12.04 20.15C10.56 20.15 9.11 19.76 7.85 19L7.55 18.83L4.43 19.65L5.26 16.61L5.06 16.29C4.24 14.99 3.81 13.47 3.81 11.91C3.81 7.37 7.5 3.67 12.05 3.67M9.13 7.39C8.95 7.39 8.76 7.4 8.59 7.41C8.36 7.42 8.16 7.5 8 7.73C7.79 7.96 7.21 8.5 7.21 9.61C7.21 10.72 8.02 11.78 8.13 11.94C8.24 12.1 9.71 14.36 11.96 15.33C13.83 16.14 14.21 15.98 14.62 15.94C15.03 15.9 15.95 15.39 16.14 14.86C16.33 14.33 16.33 13.88 16.27 13.78C16.21 13.68 16.06 13.62 15.83 13.5C15.6 13.38 14.47 12.83 14.26 12.75C14.05 12.67 13.9 12.63 13.75 12.86C13.6 13.09 13.17 13.62 13.04 13.78C12.91 13.94 12.78 13.96 12.55 13.84C12.32 13.72 11.58 13.48 10.7 12.7C10.01 12.09 9.55 11.33 9.42 11.11C9.29 10.88 9.4 10.76 9.52 10.64C9.62 10.53 9.75 10.36 9.87 10.22C9.98 10.08 10.02 9.98 10.1 9.82C10.18 9.66 10.14 9.53 10.08 9.41C10.02 9.29 9.57 8.18 9.38 7.72C9.2 7.28 9.02 7.34 8.87 7.34L8.59 7.34H9.13Z"/>
+          </svg>
+          <span>WhatsApp Us</span>
+        </button>
+      </div>
+
+      <!-- Hero Trust Pillars -->
+      <div class="hero-trust-bar animate-fade-in delay-3">
+        <div class="trust-item">
+          <div class="trust-icon-box">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M20.24 12.24a6 6 0 0 0-8.49-8.49L5 10.5V19h8.5zM16 8L2 22M17.5 15H9"/>
+            </svg>
+          </div>
+          <div class="trust-text">
+            <strong>Modern Equipment</strong>
+            <span>Biomechanically tuned gear</span>
+          </div>
+        </div>
+
+        <div class="trust-item">
+          <div class="trust-icon-box">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/>
+              <circle cx="9" cy="7" r="4"/>
+              <path d="M23 21v-2a4 4 0 0 0-3-3.87M16 3.13a4 4 0 0 1 0 7.75"/>
+            </svg>
+          </div>
+          <div class="trust-text">
+            <strong>Expert Trainers</strong>
+            <span>Certified coaches on floor</span>
+          </div>
+        </div>
+
+        <div class="trust-item">
+          <div class="trust-icon-box">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <rect x="3" y="4" width="18" height="18" rx="2" ry="2"/>
+              <line x1="16" y1="2" x2="16" y2="6"/>
+              <line x1="8" y1="2" x2="8" y2="6"/>
+              <line x1="3" y1="10" x2="21" y2="10"/>
+            </svg>
+          </div>
+          <div class="trust-text">
+            <strong>Flexible Memberships</strong>
+            <span>No hidden fees, cancel anytime</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==============================================
+       ABOUT US SECTION
+       ============================================== -->
+  <section class="section about-section" id="about">
+    <div class="container">
+      <div class="about-grid">
+        <!-- About Image Showcase with Floating Stat Card -->
+        <div class="about-media-col reveal-on-scroll">
+          <div class="about-image-wrapper">
+            <img 
+              src="https://images.unsplash.com/photo-1540497077202-7c8a3999166f?auto=format&fit=crop&w=900&q=80" 
+              alt="Athletes training at [GYM NAME] gym space" 
+              class="about-img"
+              loading="lazy"
+            >
+            <div class="stat-badge-float">
+              <div class="stat-number">100%</div>
+              <div class="stat-label">Results & Community Driven</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- About Text Content -->
+        <div class="about-content-col reveal-on-scroll">
+          <div class="section-tag">About Us</div>
+          <h2 class="section-title">MORE THAN A GYM. <br><span class="text-primary">A COMMUNITY.</span></h2>
+          <p class="about-lead">
+            At [GYM NAME], we believe fitness is not a one-size-fits-all destination — it is an ongoing journey of strength, health, and confidence.
+          </p>
+          <p class="about-desc">
+            Whether you are stepping into a gym for the very first time or training for your next competitive milestone, our inclusive, high-energy environment provides the equipment, coaching, and camaraderie to help you succeed comfortably.
+          </p>
+
+          <!-- Core Feature Checkmarks -->
+          <div class="about-features-grid">
+            <div class="about-feature-item">
+              <span class="check-icon">✓</span>
+              <span>Experienced trainers</span>
+            </div>
+            <div class="about-feature-item">
+              <span class="check-icon">✓</span>
+              <span>Modern equipment</span>
+            </div>
+            <div class="about-feature-item">
+              <span class="check-icon">✓</span>
+              <span>Clean environment</span>
+            </div>
+            <div class="about-feature-item">
+              <span class="check-icon">✓</span>
+              <span>Personalized guidance</span>
+            </div>
+            <div class="about-feature-item">
+              <span class="check-icon">✓</span>
+              <span>Strength & conditioning</span>
+            </div>
+            <div class="about-feature-item">
+              <span class="check-icon">✓</span>
+              <span>Supportive fitness community</span>
+            </div>
+          </div>
+
+          <div class="about-cta">
+            <a href="#membership" class="btn btn-primary">
+              Start Your Fitness Journey
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==============================================
+       WHY CHOOSE US SECTION
+       ============================================== -->
+  <section class="section why-section bg-light" id="why-us">
+    <div class="container">
+      <div class="section-header text-center reveal-on-scroll">
+        <div class="section-tag">Why Choose Us</div>
+        <h2 class="section-title">WHY TRAIN WITH US?</h2>
+        <p class="section-subtitle">
+          We combine cutting-edge training methodologies, top-tier equipment, and a welcoming atmosphere designed to help you stay committed.
+        </p>
+      </div>
+
+      <div class="why-grid">
+        <!-- Card 1 -->
+        <div class="why-card reveal-on-scroll">
+          <div class="card-num">01</div>
+          <div class="why-icon-box">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2" />
+              <circle cx="9" cy="7" r="4" />
+              <path d="M22 21v-2a4 4 0 0 0-3-3.87" />
+              <path d="M16 3.13a4 4 0 0 1 0 7.75" />
+            </svg>
+          </div>
+          <h3 class="why-card-title">Expert Trainers</h3>
+          <p class="why-card-desc">Get guidance from experienced fitness professionals who tailor workouts directly to your personal targets.</p>
+        </div>
+
+        <!-- Card 2 -->
+        <div class="why-card reveal-on-scroll">
+          <div class="card-num">02</div>
+          <div class="why-icon-box">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <rect x="2" y="6" width="20" height="12" rx="2" />
+              <path d="M6 12h4m4 0h4" />
+            </svg>
+          </div>
+          <h3 class="why-card-title">Modern Equipment</h3>
+          <p class="why-card-desc">Train with reliable, biomechanically designed machines and free weights built for safe and effective workouts.</p>
+        </div>
+
+        <!-- Card 3 -->
+        <div class="why-card reveal-on-scroll">
+          <div class="card-num">03</div>
+          <div class="why-icon-box">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M22 12h-4l-3 9L9 3l-3 9H2" />
+            </svg>
+          </div>
+          <h3 class="why-card-title">Personalized Training</h3>
+          <p class="why-card-desc">Work toward your goals with progressive training regimens and form checks suited to your exact fitness level.</p>
+        </div>
+
+        <!-- Card 4 -->
+        <div class="why-card reveal-on-scroll">
+          <div class="card-num">04</div>
+          <div class="why-icon-box">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M12 2v20M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6" />
+            </svg>
+          </div>
+          <h3 class="why-card-title">Clean Environment</h3>
+          <p class="why-card-desc">Enjoy a sanitised, clean, comfortable, and motivating workout space with proper ventilation and hygiene protocols.</p>
+        </div>
+
+        <!-- Card 5 -->
+        <div class="why-card reveal-on-scroll">
+          <div class="card-num">05</div>
+          <div class="why-icon-box">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <rect x="3" y="4" width="18" height="18" rx="2" />
+              <path d="M16 2v4M8 2v4M3 10h18M8 14h.01M12 14h.01M16 14h.01M8 18h.01M12 18h.01M16 18h.01" />
+            </svg>
+          </div>
+          <h3 class="why-card-title">Flexible Memberships</h3>
+          <p class="why-card-desc">Choose a membership option that seamlessly fits your schedule and fitness routine with transparent terms.</p>
+        </div>
+
+        <!-- Card 6 -->
+        <div class="why-card reveal-on-scroll">
+          <div class="card-num">06</div>
+          <div class="why-icon-box">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2" />
+              <circle cx="9" cy="7" r="4" />
+              <path d="M23 21v-2a4 4 0 0 0-3-3.87" />
+              <path d="M16 3.13a4 4 0 0 1 0 7.75" />
+            </svg>
+          </div>
+          <h3 class="why-card-title">Supportive Community</h3>
+          <p class="why-card-desc">Train alongside driven members and supportive coaches who motivate you to overcome challenges and stay consistent.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==============================================
+       PROGRAMS / WORKOUTS SECTION
+       ============================================== -->
+  <section class="section programs-section" id="programs">
+    <div class="container">
+      <div class="section-header text-center reveal-on-scroll">
+        <div class="section-tag">Workout Programs</div>
+        <h2 class="section-title">TRAIN YOUR WAY</h2>
+        <p class="section-subtitle">
+          From high-intensity fat burn to pure strength building, find the targeted program built for your body and your goals.
+        </p>
+      </div>
+
+      <div class="programs-grid">
+        <!-- Program 1: Strength Training -->
+        <div class="program-card reveal-on-scroll">
+          <div class="program-img-wrap">
+            <img 
+              src="https://images.unsplash.com/photo-1581009146145-b5ef050c2e1e?auto=format&fit=crop&w=700&q=80" 
+              alt="Strength Training Program" 
+              loading="lazy"
+            >
+            <span class="program-badge">Popular</span>
+          </div>
+          <div class="program-content">
+            <h3 class="program-name">Strength Training</h3>
+            <p class="program-desc">Master compound barbell movements, increase raw lifting power, and build resilient bone density under certified guidance.</p>
+            <button type="button" class="btn btn-outline btn-block js-program-enquire" data-program="Strength Training">
+              <span>Enquire Now</span>
+              <svg class="icon-inline" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M5 12h14M12 5l7 7-7 7"/>
+              </svg>
+            </button>
+          </div>
+        </div>
+
+        <!-- Program 2: Weight Loss -->
+        <div class="program-card reveal-on-scroll">
+          <div class="program-img-wrap">
+            <img 
+              src="https://images.unsplash.com/photo-1517838277536-f5f99be501cd?auto=format&fit=crop&w=700&q=80" 
+              alt="Weight Loss Program" 
+              loading="lazy"
+            >
+            <span class="program-badge">Fat Burn</span>
+          </div>
+          <div class="program-content">
+            <h3 class="program-name">Weight Loss</h3>
+            <p class="program-desc">High-caloric burn routines, metabolic conditioning, and sustainable nutrition guidelines tailored for healthy shedding.</p>
+            <button type="button" class="btn btn-outline btn-block js-program-enquire" data-program="Weight Loss">
+              <span>Enquire Now</span>
+              <svg class="icon-inline" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M5 12h14M12 5l7 7-7 7"/>
+              </svg>
+            </button>
+          </div>
+        </div>
+
+        <!-- Program 3: Muscle Building -->
+        <div class="program-card reveal-on-scroll">
+          <div class="program-img-wrap">
+            <img 
+              src="https://images.unsplash.com/photo-1583454110551-21f2fa2afe61?auto=format&fit=crop&w=700&q=80" 
+              alt="Muscle Building Hypertrophy Program" 
+              loading="lazy"
+            >
+            <span class="program-badge">Hypertrophy</span>
+          </div>
+          <div class="program-content">
+            <h3 class="program-name">Muscle Building</h3>
+            <p class="program-desc">Structured hypertrophy splits, progressive overload tracking, and muscle recovery science to build defined, lean mass.</p>
+            <button type="button" class="btn btn-outline btn-block js-program-enquire" data-program="Muscle Building">
+              <span>Enquire Now</span>
+              <svg class="icon-inline" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M5 12h14M12 5l7 7-7 7"/>
+              </svg>
+            </button>
+          </div>
+        </div>
+
+        <!-- Program 4: Personal Training -->
+        <div class="program-card reveal-on-scroll">
+          <div class="program-img-wrap">
+            <img 
+              src="https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?auto=format&fit=crop&w=700&q=80" 
+              alt="One-on-one Personal Training" 
+              loading="lazy"
+            >
+            <span class="program-badge">1-on-1 Coaching</span>
+          </div>
+          <div class="program-content">
+            <h3 class="program-name">Personal Training</h3>
+            <p class="program-desc">Dedicated 1-on-1 attention with customized workout periodization, biometric tracking, and individual accountability.</p>
+            <button type="button" class="btn btn-outline btn-block js-program-enquire" data-program="Personal Training">
+              <span>Enquire Now</span>
+              <svg class="icon-inline" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M5 12h14M12 5l7 7-7 7"/>
+              </svg>
+            </button>
+          </div>
+        </div>
+
+        <!-- Program 5: Functional Training -->
+        <div class="program-card reveal-on-scroll">
+          <div class="program-img-wrap">
+            <img 
+              src="https://images.unsplash.com/photo-1517963879433-6ad2b056d712?auto=format&fit=crop&w=700&q=80" 
+              alt="Functional Training and Mobility" 
+              loading="lazy"
+            >
+            <span class="program-badge">Agility</span>
+          </div>
+          <div class="program-content">
+            <h3 class="program-name">Functional Training</h3>
+            <p class="program-desc">Enhance mobility, core stability, balance, and athletic agility using kettlebells, battle ropes, and plyometric drills.</p>
+            <button type="button" class="btn btn-outline btn-block js-program-enquire" data-program="Functional Training">
+              <span>Enquire Now</span>
+              <svg class="icon-inline" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M5 12h14M12 5l7 7-7 7"/>
+              </svg>
+            </button>
+          </div>
+        </div>
+
+        <!-- Program 6: Cardio & Conditioning -->
+        <div class="program-card reveal-on-scroll">
+          <div class="program-img-wrap">
+            <img 
+              src="https://images.unsplash.com/photo-1538805060514-97d9cc17730c?auto=format&fit=crop&w=700&q=80" 
+              alt="Cardio & Endurance Conditioning" 
+              loading="lazy"
+            >
+            <span class="program-badge">Endurance</span>
+          </div>
+          <div class="program-content">
+            <h3 class="program-name">Cardio & Conditioning</h3>
+            <p class="program-desc">Boost cardiovascular endurance, lung stamina, and calorie output through interval training, rowers, and curved treadmills.</p>
+            <button type="button" class="btn btn-outline btn-block js-program-enquire" data-program="Cardio & Conditioning">
+              <span>Enquire Now</span>
+              <svg class="icon-inline" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M5 12h14M12 5l7 7-7 7"/>
+              </svg>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==============================================
+       FACILITIES SECTION (WITH LIGHTBOX)
+       ============================================== -->
+  <section class="section facilities-section bg-light" id="facilities">
+    <div class="container">
+      <div class="section-header text-center reveal-on-scroll">
+        <div class="section-tag">World-Class Space</div>
+        <h2 class="section-title">PREMIUM GYM FACILITIES</h2>
+        <p class="section-subtitle">
+          Explore our fully equipped workout zones designed for high performance, maximum safety, and an energizing atmosphere.
+        </p>
+      </div>
+
+      <div class="facilities-grid">
+        <!-- Facility 1 -->
+        <div class="facility-card reveal-on-scroll" data-facility-title="Strength Training Area" data-img-src="https://images.unsplash.com/photo-1534438327276-14e5300c3a48?auto=format&fit=crop&w=1200&q=80">
+          <img 
+            src="https://images.unsplash.com/photo-1534438327276-14e5300c3a48?auto=format&fit=crop&w=600&q=80" 
+            alt="Strength Training Area" 
+            loading="lazy"
+          >
+          <div class="facility-overlay">
+            <span class="facility-zoom-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/><line x1="11" y1="8" x2="11" y2="14"/><line x1="8" y1="11" x2="14" y2="11"/>
+              </svg>
+            </span>
+            <h3 class="facility-name">Strength Training Area</h3>
+            <p class="facility-desc">Squat racks, Olympic platforms & heavy-duty rigs.</p>
+          </div>
+        </div>
+
+        <!-- Facility 2 -->
+        <div class="facility-card reveal-on-scroll" data-facility-title="Cardio Zone" data-img-src="https://images.unsplash.com/photo-1576678927484-cc907957088c?auto=format&fit=crop&w=1200&q=80">
+          <img 
+            src="https://images.unsplash.com/photo-1576678927484-cc907957088c?auto=format&fit=crop&w=600&q=80" 
+            alt="Cardio Zone" 
+            loading="lazy"
+          >
+          <div class="facility-overlay">
+            <span class="facility-zoom-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/><line x1="11" y1="8" x2="11" y2="14"/><line x1="8" y1="11" x2="14" y2="11"/>
+              </svg>
+            </span>
+            <h3 class="facility-name">Cardio Zone</h3>
+            <p class="facility-desc">Smart treadmills, ellipticals & air bikes.</p>
+          </div>
+        </div>
+
+        <!-- Facility 3 -->
+        <div class="facility-card reveal-on-scroll" data-facility-title="Free Weights" data-img-src="https://images.unsplash.com/photo-1584735935682-2f2b69dff9d2?auto=format&fit=crop&w=1200&q=80">
+          <img 
+            src="https://images.unsplash.com/photo-1584735935682-2f2b69dff9d2?auto=format&fit=crop&w=600&q=80" 
+            alt="Free Weights Zone" 
+            loading="lazy"
+          >
+          <div class="facility-overlay">
+            <span class="facility-zoom-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/><line x1="11" y1="8" x2="11" y2="14"/><line x1="8" y1="11" x2="14" y2="11"/>
+              </svg>
+            </span>
+            <h3 class="facility-name">Free Weights</h3>
+            <p class="facility-desc">Dumbbells 2.5kg to 50kg, pre-loaded EZ bars.</p>
+          </div>
+        </div>
+
+        <!-- Facility 4 -->
+        <div class="facility-card reveal-on-scroll" data-facility-title="Functional Training Area" data-img-src="https://images.unsplash.com/photo-1518611012118-696072aa579a?auto=format&fit=crop&w=1200&q=80">
+          <img 
+            src="https://images.unsplash.com/photo-1518611012118-696072aa579a?auto=format&fit=crop&w=600&q=80" 
+            alt="Functional Training Area" 
+            loading="lazy"
+          >
+          <div class="facility-overlay">
+            <span class="facility-zoom-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/><line x1="11" y1="8" x2="11" y2="14"/><line x1="8" y1="11" x2="14" y2="11"/>
+              </svg>
+            </span>
+            <h3 class="facility-name">Functional Training Area</h3>
+            <p class="facility-desc">Turf sprint track, kettlebells & suspension rigs.</p>
+          </div>
+        </div>
+
+        <!-- Facility 5 -->
+        <div class="facility-card reveal-on-scroll" data-facility-title="Changing Area & Lockers" data-img-src="https://images.unsplash.com/photo-1584622650111-993a426fbf0a?auto=format&fit=crop&w=1200&q=80">
+          <img 
+            src="https://images.unsplash.com/photo-1584622650111-993a426fbf0a?auto=format&fit=crop&w=600&q=80" 
+            alt="Changing Area and Lockers" 
+            loading="lazy"
+          >
+          <div class="facility-overlay">
+            <span class="facility-zoom-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/><line x1="11" y1="8" x2="11" y2="14"/><line x1="8" y1="11" x2="14" y2="11"/>
+              </svg>
+            </span>
+            <h3 class="facility-name">Changing Area</h3>
+            <p class="facility-desc">Secure individual lockers & modern restrooms.</p>
+          </div>
+        </div>
+
+        <!-- Facility 6 -->
+        <div class="facility-card reveal-on-scroll" data-facility-title="Drinking Water Station" data-img-src="https://images.unsplash.com/photo-1559839734-2b71ea197ec2?auto=format&fit=crop&w=1200&q=80">
+          <img 
+            src="https://images.unsplash.com/photo-1559839734-2b71ea197ec2?auto=format&fit=crop&w=600&q=80" 
+            alt="Drinking Water Station" 
+            loading="lazy"
+          >
+          <div class="facility-overlay">
+            <span class="facility-zoom-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/><line x1="11" y1="8" x2="11" y2="14"/><line x1="8" y1="11" x2="14" y2="11"/>
+              </svg>
+            </span>
+            <h3 class="facility-name">Drinking Water</h3>
+            <p class="facility-desc">Reverse-osmosis purified cold water refill points.</p>
+          </div>
+        </div>
+
+        <!-- Facility 7 -->
+        <div class="facility-card reveal-on-scroll" data-facility-title="Clean Workout Space" data-img-src="https://images.unsplash.com/photo-1517838277536-f5f99be501cd?auto=format&fit=crop&w=1200&q=80">
+          <img 
+            src="https://images.unsplash.com/photo-1517838277536-f5f99be501cd?auto=format&fit=crop&w=600&q=80" 
+            alt="Clean Workout Space" 
+            loading="lazy"
+          >
+          <div class="facility-overlay">
+            <span class="facility-zoom-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/><line x1="11" y1="8" x2="11" y2="14"/><line x1="8" y1="11" x2="14" y2="11"/>
+              </svg>
+            </span>
+            <h3 class="facility-name">Clean Workout Space</h3>
+            <p class="facility-desc">Continuously sanitized mats and antibacterial wipe stations.</p>
+          </div>
+        </div>
+
+        <!-- Facility 8 -->
+        <div class="facility-card reveal-on-scroll" data-facility-title="Modern Equipment" data-img-src="https://images.unsplash.com/photo-1574680096145-d05b474e2155?auto=format&fit=crop&w=1200&q=80">
+          <img 
+            src="https://images.unsplash.com/photo-1574680096145-d05b474e2155?auto=format&fit=crop&w=600&q=80" 
+            alt="Modern Biomechanical Equipment" 
+            loading="lazy"
+          >
+          <div class="facility-overlay">
+            <span class="facility-zoom-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/><line x1="11" y1="8" x2="11" y2="14"/><line x1="8" y1="11" x2="14" y2="11"/>
+              </svg>
+            </span>
+            <h3 class="facility-name">Modern Equipment</h3>
+            <p class="facility-desc">Pin-loaded & plate-loaded selectorized machinery.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Image Lightbox Modal -->
+  <div class="lightbox-modal" id="imageLightbox" role="dialog" aria-modal="true" aria-label="Facility Image Viewer">
+    <button class="lightbox-close" id="lightboxClose" aria-label="Close Lightbox">&times;</button>
+    <div class="lightbox-content">
+      <img id="lightboxImg" src="" alt="Enlarged facility view">
+      <div class="lightbox-caption" id="lightboxCaption"></div>
+    </div>
+  </div>
+
+  <!-- ==============================================
+       TRAINERS SECTION
+       ============================================== -->
+  <section class="section trainers-section" id="trainers">
+    <div class="container">
+      <div class="section-header text-center reveal-on-scroll">
+        <div class="section-tag">Coaching Staff</div>
+        <h2 class="section-title">MEET YOUR TRAINERS</h2>
+        <p class="section-subtitle">
+          Our coaches bring real-world lifting experience, motivating leadership, and attentive technique correction to every workout session.
+        </p>
+      </div>
+
+      <div class="trainers-grid">
+        <!-- Trainer 1 -->
+        <div class="trainer-card reveal-on-scroll">
+          <div class="trainer-img-wrap">
+            <img 
+              src="https://images.unsplash.com/photo-1567013127542-490d757e51fc?auto=format&fit=crop&w=600&q=80" 
+              alt="Trainer Marcus Vance" 
+              loading="lazy"
+            >
+          </div>
+          <div class="trainer-info">
+            <h3 class="trainer-name">Marcus Vance</h3>
+            <div class="trainer-role">Head Strength Coach</div>
+            <div class="trainer-spec">Specialization: Strength & Conditioning</div>
+            <p class="trainer-desc">
+              Focuses on barbell power mechanics, muscular symmetry, and building rock-solid injury resistance for lifters of all experience levels.
+            </p>
+            <button type="button" class="btn btn-outline btn-sm js-trainer-enquire" data-trainer="Marcus Vance">
+              Train with Marcus
+            </button>
+          </div>
+        </div>
+
+        <!-- Trainer 2 -->
+        <div class="trainer-card reveal-on-scroll">
+          <div class="trainer-img-wrap">
+            <img 
+              src="https://images.unsplash.com/photo-1594381898411-846e7d193883?auto=format&fit=crop&w=600&q=80" 
+              alt="Trainer Elena Rostova" 
+              loading="lazy"
+            >
+          </div>
+          <div class="trainer-info">
+            <h3 class="trainer-name">Elena Rostova</h3>
+            <div class="trainer-role">Senior Fitness Coach</div>
+            <div class="trainer-spec">Specialization: Weight Loss & HIIT</div>
+            <p class="trainer-desc">
+              Specializes in high-efficiency metabolic circuits, functional body transformations, and lifestyle nutrition habits that actually stick.
+            </p>
+            <button type="button" class="btn btn-outline btn-sm js-trainer-enquire" data-trainer="Elena Rostova">
+              Train with Elena
+            </button>
+          </div>
+        </div>
+
+        <!-- Trainer 3 -->
+        <div class="trainer-card reveal-on-scroll">
+          <div class="trainer-img-wrap">
+            <img 
+              src="https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?auto=format&fit=crop&w=600&q=80" 
+              alt="Trainer David Miller" 
+              loading="lazy"
+            >
+          </div>
+          <div class="trainer-info">
+            <h3 class="trainer-name">David Miller</h3>
+            <div class="trainer-role">Performance Specialist</div>
+            <div class="trainer-spec">Specialization: Personal Training Coach</div>
+            <p class="trainer-desc">
+              Expert in posture realignment, athletic conditioning, and customized 1-on-1 programs designed to break through long-standing plateaus.
+            </p>
+            <button type="button" class="btn btn-outline btn-sm js-trainer-enquire" data-trainer="David Miller">
+              Train with David
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==============================================
+       MEMBERSHIP SECTION
+       ============================================== -->
+  <section class="section membership-section bg-light" id="membership">
+    <div class="container">
+      <div class="section-header text-center reveal-on-scroll">
+        <div class="section-tag">Flexible Plans</div>
+        <h2 class="section-title">CHOOSE YOUR MEMBERSHIP</h2>
+        <p class="section-subtitle">
+          Transparent plans with no complicated lock-in contracts. Select your tier and enquire instantly on WhatsApp for available seasonal rates.
+        </p>
+      </div>
+
+      <div class="membership-grid">
+        <!-- Plan 1: BASIC -->
+        <div class="membership-card reveal-on-scroll">
+          <div class="plan-header">
+            <h3 class="plan-name">BASIC</h3>
+            <div class="plan-price-tag">GET MEMBERSHIP DETAILS</div>
+            <p class="plan-desc">Perfect for independent workout routines and consistent gym goers.</p>
+          </div>
+          <ul class="plan-features">
+            <li><span class="check">✓</span> Full gym access</li>
+            <li><span class="check">✓</span> Cardio equipment zone</li>
+            <li><span class="check">✓</span> Strength & free weights access</li>
+            <li><span class="check">✓</span> Locker & changing room access</li>
+            <li><span class="check">✓</span> RO drinking water stations</li>
+            <li class="disabled"><span class="cross">✕</span> Dedicated 1-on-1 trainer</li>
+            <li class="disabled"><span class="cross">✕</span> Custom diet & nutrition plan</li>
+          </ul>
+          <div class="plan-action">
+            <button type="button" class="btn btn-outline btn-block js-plan-btn" data-plan="Basic Plan">
+              Enquire on WhatsApp
+            </button>
+          </div>
+        </div>
+
+        <!-- Plan 2: PREMIUM (Featured) -->
+        <div class="membership-card featured reveal-on-scroll">
+          <div class="featured-badge">MOST POPULAR</div>
+          <div class="plan-header">
+            <h3 class="plan-name">PREMIUM</h3>
+            <div class="plan-price-tag highlight">GET MEMBERSHIP DETAILS</div>
+            <p class="plan-desc">Our all-inclusive package with full coaching support and regular assessments.</p>
+          </div>
+          <ul class="plan-features">
+            <li><span class="check">✓</span> Unlimited all-day gym access</li>
+            <li><span class="check">✓</span> Full cardio, strength & functional access</li>
+            <li><span class="check">✓</span> Floor trainer guidance & form check</li>
+            <li><span class="check">✓</span> Monthly body composition assessment</li>
+            <li><span class="check">✓</span> Customized workout routine roadmap</li>
+            <li><span class="check">✓</span> Premium locker room & shower access</li>
+            <li class="disabled"><span class="cross">✕</span> Daily private 1-on-1 coach</li>
+          </ul>
+          <div class="plan-action">
+            <button type="button" class="btn btn-primary btn-block js-plan-btn" data-plan="Premium Plan">
+              Enquire on WhatsApp
+            </button>
+          </div>
+        </div>
+
+        <!-- Plan 3: PERSONAL TRAINING -->
+        <div class="membership-card reveal-on-scroll">
+          <div class="plan-header">
+            <h3 class="plan-name">PERSONAL TRAINING</h3>
+            <div class="plan-price-tag">GET MEMBERSHIP DETAILS</div>
+            <p class="plan-desc">Maximum accountability and dedicated 1-on-1 coaching for accelerated results.</p>
+          </div>
+          <ul class="plan-features">
+            <li><span class="check">✓</span> All Premium Membership privileges</li>
+            <li><span class="check">✓</span> Dedicated certified personal trainer</li>
+            <li><span class="check">✓</span> Individualized progressive workouts</li>
+            <li><span class="check">✓</span> Weekly biometric & strength checkups</li>
+            <li><span class="check">✓</span> Tailored macronutrient guidance</li>
+            <li><span class="check">✓</span> Priority equipment scheduling</li>
+            <li><span class="check">✓</span> Direct trainer messaging support</li>
+          </ul>
+          <div class="plan-action">
+            <button type="button" class="btn btn-outline btn-block js-plan-btn" data-plan="Personal Training Plan">
+              Enquire on WhatsApp
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==============================================
+       GYM TIMINGS SECTION
+       ============================================== -->
+  <section class="section timings-section" id="timings">
+    <div class="container">
+      <div class="timings-card reveal-on-scroll">
+        <div class="timings-header">
+          <div class="timings-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <circle cx="12" cy="12" r="10"/>
+              <polyline points="12 6 12 12 16 14"/>
+            </svg>
+          </div>
+          <div>
+            <div class="section-tag">Working Hours</div>
+            <h2 class="timings-title">GYM OPERATING HOURS</h2>
+          </div>
+        </div>
+
+        <div class="timings-grid">
+          <div class="timing-block">
+            <span class="timing-day">Monday – Saturday</span>
+            <span class="timing-hours">6:00 AM – 10:00 PM</span>
+            <span class="timing-sub">Morning & Evening sessions open</span>
+          </div>
+          <div class="timing-block">
+            <span class="timing-day">Sunday</span>
+            <span class="timing-hours">7:00 AM – 1:00 PM</span>
+            <span class="timing-sub">Half-day recovery & training session</span>
+          </div>
+        </div>
+
+        <div class="timings-note">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="icon-inline">
+            <circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/>
+          </svg>
+          <span>Timings may vary on national holidays. Contact us on WhatsApp for real-time confirmation.</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==============================================
+       TESTIMONIALS SECTION
+       ============================================== -->
+  <section class="section testimonials-section bg-light" id="testimonials">
+    <div class="container">
+      <div class="section-header text-center reveal-on-scroll">
+        <div class="section-tag">Member Experiences</div>
+        <h2 class="section-title">WHAT OUR MEMBERS SAY</h2>
+        <p class="section-subtitle">
+          Real feedback from individuals who made [GYM NAME] part of their daily lifestyle.
+        </p>
+      </div>
+
+      <div class="testimonials-grid">
+        <!-- Testimonial 1 -->
+        <div class="testimonial-card reveal-on-scroll">
+          <div class="stars">★★★★★</div>
+          <p class="testimonial-text">
+            "Great environment and helpful trainers. The equipment is well maintained, clean, and never overcrowded during my morning workout routine."
+          </p>
+          <div class="testimonial-author">
+            <div class="author-avatar">RK</div>
+            <div class="author-details">
+              <strong>Rahul K.</strong>
+              <span>Member for 8 Months</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Testimonial 2 -->
+        <div class="testimonial-card reveal-on-scroll">
+          <div class="stars">★★★★★</div>
+          <p class="testimonial-text">
+            "Very comfortable gym with good training guidance. As a complete beginner, I never felt intimidated. The trainers took time to teach proper form."
+          </p>
+          <div class="testimonial-author">
+            <div class="author-avatar">SP</div>
+            <div class="author-details">
+              <strong>Sneha P.</strong>
+              <span>Member for 1 Year</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Testimonial 3 -->
+        <div class="testimonial-card reveal-on-scroll">
+          <div class="stars">★★★★★</div>
+          <p class="testimonial-text">
+            "Joined for their strength training area. Heavy dumbbells, solid squat racks, and an energetic crowd. Enquiring through WhatsApp was super straightforward!"
+          </p>
+          <div class="testimonial-author">
+            <div class="author-avatar">AM</div>
+            <div class="author-details">
+              <strong>Amit M.</strong>
+              <span>Member for 6 Months</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==============================================
+       FAQ SECTION (ACCORDION)
+       ============================================== -->
+  <section class="section faq-section" id="faq">
+    <div class="container max-w-narrow">
+      <div class="section-header text-center reveal-on-scroll">
+        <div class="section-tag">Got Questions?</div>
+        <h2 class="section-title">FREQUENTLY ASKED QUESTIONS</h2>
+        <p class="section-subtitle">
+          Here are clear answers to the most common questions from prospective members.
+        </p>
+      </div>
+
+      <div class="faq-accordion" id="faqAccordion">
+        <!-- FAQ 1 -->
+        <div class="faq-item reveal-on-scroll">
+          <button class="faq-question" aria-expanded="false">
+            <span>Do I need prior gym experience?</span>
+            <span class="faq-icon">+</span>
+          </button>
+          <div class="faq-answer">
+            <p>No prior experience is necessary. Our certified floor trainers guide beginners on machine setup, proper lifting form, and gym etiquette from your very first session.</p>
+          </div>
+        </div>
+
+        <!-- FAQ 2 -->
+        <div class="faq-item reveal-on-scroll">
+          <button class="faq-question" aria-expanded="false">
+            <span>What membership plans are available?</span>
+            <span class="faq-icon">+</span>
+          </button>
+          <div class="faq-answer">
+            <p>We offer Basic, Premium, and dedicated 1-on-1 Personal Training options across monthly, quarterly, and annual durations. Click "Enquire on WhatsApp" to receive our exact pricing tiers.</p>
+          </div>
+        </div>
+
+        <!-- FAQ 3 -->
+        <div class="faq-item reveal-on-scroll">
+          <button class="faq-question" aria-expanded="false">
+            <span>Do you provide personal training?</span>
+            <span class="faq-icon">+</span>
+          </button>
+          <div class="faq-answer">
+            <p>Yes, we have certified personal coaches who craft individualized workout roadmaps, monitor form, and conduct weekly progress checkups.</p>
+          </div>
+        </div>
+
+        <!-- FAQ 4 -->
+        <div class="faq-item reveal-on-scroll">
+          <button class="faq-question" aria-expanded="false">
+            <span>What are the gym timings?</span>
+            <span class="faq-icon">+</span>
+          </button>
+          <div class="faq-answer">
+            <p>We are open Monday through Saturday from 6:00 AM to 10:00 PM, and on Sundays from 7:00 AM to 1:00 PM.</p>
+          </div>
+        </div>
+
+        <!-- FAQ 5 -->
+        <div class="faq-item reveal-on-scroll">
+          <button class="faq-question" aria-expanded="false">
+            <span>Can beginners join?</span>
+            <span class="faq-icon">+</span>
+          </button>
+          <div class="faq-answer">
+            <p>Absolutely! A large portion of our community started with zero lifting background. We pride ourselves on creating a comfortable, welcoming, and intimidation-free environment.</p>
+          </div>
+        </div>
+
+        <!-- FAQ 6 -->
+        <div class="faq-item reveal-on-scroll">
+          <button class="faq-question" aria-expanded="false">
+            <span>Do I need to book a trial?</span>
+            <span class="faq-icon">+</span>
+          </button>
+          <div class="faq-answer">
+            <p>You are welcome to drop by for a tour anytime during open hours, or reach out to us on WhatsApp beforehand to arrange a facility walkthrough and complimentary consultation.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==============================================
+       CALL TO ACTION (PROMINENT BANNER)
+       ============================================== -->
+  <section class="section cta-banner-section">
+    <div class="container">
+      <div class="cta-banner reveal-on-scroll">
+        <div class="cta-banner-content">
+          <span class="cta-tag">Take the First Step</span>
+          <h2 class="cta-title">READY TO START?</h2>
+          <p class="cta-desc">
+            Your fitness journey starts with one decision. Visit us or send an enquiry today to lock in your orientation.
+          </p>
+          <div class="cta-btn-group">
+            <a href="#membership" class="btn btn-primary btn-large">
+              Join Now
+            </a>
+            <button type="button" class="btn btn-whatsapp btn-large js-whatsapp-cta">
+              <svg class="icon-inline" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91C2.13 13.66 2.59 15.36 3.45 16.86L2.05 22L7.3 20.62C8.75 21.41 10.38 21.83 12.04 21.83C17.5 21.83 21.95 17.38 21.95 11.92C21.95 9.27 20.92 6.78 19.05 4.91C17.18 3.03 14.69 2 12.04 2M12.05 3.67C14.25 3.67 16.31 4.53 17.87 6.09C19.42 7.65 20.28 9.72 20.28 11.92C20.28 16.46 16.58 20.15 12.04 20.15C10.56 20.15 9.11 19.76 7.85 19L7.55 18.83L4.43 19.65L5.26 16.61L5.06 16.29C4.24 14.99 3.81 13.47 3.81 11.91C3.81 7.37 7.5 3.67 12.05 3.67M9.13 7.39C8.95 7.39 8.76 7.4 8.59 7.41C8.36 7.42 8.16 7.5 8 7.73C7.79 7.96 7.21 8.5 7.21 9.61C7.21 10.72 8.02 11.78 8.13 11.94C8.24 12.1 9.71 14.36 11.96 15.33C13.83 16.14 14.21 15.98 14.62 15.94C15.03 15.9 15.95 15.39 16.14 14.86C16.33 14.33 16.33 13.88 16.27 13.78C16.21 13.68 16.06 13.62 15.83 13.5C15.6 13.38 14.47 12.83 14.26 12.75C14.05 12.67 13.9 12.63 13.75 12.86C13.6 13.09 13.17 13.62 13.04 13.78C12.91 13.94 12.78 13.96 12.55 13.84C12.32 13.72 11.58 13.48 10.7 12.7C10.01 12.09 9.55 11.33 9.42 11.11C9.29 10.88 9.4 10.76 9.52 10.64C9.62 10.53 9.75 10.36 9.87 10.22C9.98 10.08 10.02 9.98 10.1 9.82C10.18 9.66 10.14 9.53 10.08 9.41C10.02 9.29 9.57 8.18 9.38 7.72C9.2 7.28 9.02 7.34 8.87 7.34L8.59 7.34H9.13Z"/>
+              </svg>
+              <span>Chat on WhatsApp</span>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==============================================
+       CONTACT & INQUIRY FORM SECTION
+       ============================================== -->
+  <section class="section contact-section bg-light" id="contact">
+    <div class="container">
+      <div class="section-header text-center reveal-on-scroll">
+        <div class="section-tag">Get in Touch</div>
+        <h2 class="section-title">VISIT US OR SEND AN INQUIRY</h2>
+        <p class="section-subtitle">
+          Have a question or want to stop by? Fill out the quick form below or reach out directly through WhatsApp.
+        </p>
+      </div>
+
+      <div class="contact-grid">
+        <!-- Contact Information Card -->
+        <div class="contact-info-card reveal-on-scroll">
+          <h3 class="contact-info-title">[GYM NAME]</h3>
+          <p class="contact-info-subtitle">Your local fitness destination for strength, health and positive transformation.</p>
+
+          <ul class="contact-details-list">
+            <li class="contact-detail-item">
+              <div class="contact-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/>
+                  <circle cx="12" cy="10" r="3"/>
+                </svg>
+              </div>
+              <div>
+                <strong>Address:</strong>
+                <p id="gymAddressDisplay">[GYM ADDRESS]</p>
+              </div>
+            </li>
+
+            <li class="contact-detail-item">
+              <div class="contact-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/>
+                </svg>
+              </div>
+              <div>
+                <strong>Phone Number:</strong>
+                <p><a href="tel:[PHONE NUMBER]" id="gymPhoneDisplay">[PHONE NUMBER]</a></p>
+              </div>
+            </li>
+
+            <li class="contact-detail-item">
+              <div class="contact-icon">
+                <svg viewBox="0 0 24 24" fill="currentColor">
+                  <path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91C2.13 13.66 2.59 15.36 3.45 16.86L2.05 22L7.3 20.62C8.75 21.41 10.38 21.83 12.04 21.83C17.5 21.83 21.95 17.38 21.95 11.92C21.95 9.27 20.92 6.78 19.05 4.91C17.18 3.03 14.69 2 12.04 2M12.05 3.67C14.25 3.67 16.31 4.53 17.87 6.09C19.42 7.65 20.28 9.72 20.28 11.92C20.28 16.46 16.58 20.15 12.04 20.15C10.56 20.15 9.11 19.76 7.85 19L7.55 18.83L4.43 19.65L5.26 16.61L5.06 16.29C4.24 14.99 3.81 13.47 3.81 11.91C3.81 7.37 7.5 3.67 12.05 3.67M9.13 7.39C8.95 7.39 8.76 7.4 8.59 7.41C8.36 7.42 8.16 7.5 8 7.73C7.79 7.96 7.21 8.5 7.21 9.61C7.21 10.72 8.02 11.78 8.13 11.94C8.24 12.1 9.71 14.36 11.96 15.33C13.83 16.14 14.21 15.98 14.62 15.94C15.03 15.9 15.95 15.39 16.14 14.86C16.33 14.33 16.33 13.88 16.27 13.78C16.21 13.68 16.06 13.62 15.83 13.5C15.6 13.38 14.47 12.83 14.26 12.75C14.05 12.67 13.9 12.63 13.75 12.86C13.6 13.09 13.17 13.62 13.04 13.78C12.91 13.94 12.78 13.96 12.55 13.84C12.32 13.72 11.58 13.48 10.7 12.7C10.01 12.09 9.55 11.33 9.42 11.11C9.29 10.88 9.4 10.76 9.52 10.64C9.62 10.53 9.75 10.36 9.87 10.22C9.98 10.08 10.02 9.98 10.1 9.82C10.18 9.66 10.14 9.53 10.08 9.41C10.02 9.29 9.57 8.18 9.38 7.72C9.2 7.28 9.02 7.34 8.87 7.34L8.59 7.34H9.13Z"/>
+                </svg>
+              </div>
+              <div>
+                <strong>WhatsApp:</strong>
+                <p><a href="#" class="js-whatsapp-contact" id="gymWhatsappDisplay">[WHATSAPP NUMBER]</a></p>
+              </div>
+            </li>
+
+            <li class="contact-detail-item">
+              <div class="contact-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
+                  <polyline points="22,6 12,13 2,6"/>
+                </svg>
+              </div>
+              <div>
+                <strong>Email Address:</strong>
+                <p><a href="mailto:[EMAIL ADDRESS]" id="gymEmailDisplay">[EMAIL ADDRESS]</a></p>
+              </div>
+            </li>
+
+            <li class="contact-detail-item">
+              <div class="contact-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/>
+                </svg>
+              </div>
+              <div>
+                <strong>Opening Hours:</strong>
+                <p>Mon – Sat: 6:00 AM – 10:00 PM<br>Sun: 7:00 AM – 1:00 PM</p>
+              </div>
+            </li>
+          </ul>
+
+          <div class="directions-btn-wrap">
+            <button type="button" class="btn btn-outline btn-block" id="getDirectionsBtn">
+              <svg class="icon-inline" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <polygon points="3 11 22 2 13 21 11 13 3 11"/>
+              </svg>
+              <span>Get Directions on Google Maps</span>
+            </button>
+          </div>
+        </div>
+
+        <!-- Front-end WhatsApp Inquiry Form (No Backend) -->
+        <div class="contact-form-card reveal-on-scroll">
+          <div class="form-header">
+            <h3>Send an Instant Inquiry</h3>
+            <p>Submitting this form opens WhatsApp with your pre-filled inquiry ready to send.</p>
+          </div>
+
+          <form id="inquiryForm" class="inquiry-form" novalidate>
+            <div class="form-group">
+              <label for="formName" class="form-label">Full Name <span class="required">*</span></label>
+              <input 
+                type="text" 
+                id="formName" 
+                name="name" 
+                class="form-control" 
+                placeholder="e.g. John Doe" 
+                required
+              >
+              <span class="form-error" id="nameError">Please enter your name.</span>
+            </div>
+
+            <div class="form-group">
+              <label for="formPhone" class="form-label">Phone Number <span class="required">*</span></label>
+              <input 
+                type="tel" 
+                id="formPhone" 
+                name="phone" 
+                class="form-control" 
+                placeholder="e.g. 9876543210" 
+                required
+              >
+              <span class="form-error" id="phoneError">Please enter a valid phone number.</span>
+            </div>
+
+            <div class="form-group">
+              <label for="formInterest" class="form-label">Interested In <span class="required">*</span></label>
+              <select id="formInterest" name="interestedIn" class="form-control" required>
+                <option value="" disabled selected>Select an option...</option>
+                <option value="General Membership">General Membership</option>
+                <option value="Personal Training">Personal Training</option>
+                <option value="Weight Loss">Weight Loss</option>
+                <option value="Muscle Building">Muscle Building</option>
+                <option value="Strength Training">Strength Training</option>
+                <option value="Other">Other</option>
+              </select>
+              <span class="form-error" id="interestError">Please select what you are interested in.</span>
+            </div>
+
+            <div class="form-group">
+              <label for="formMessage" class="form-label">Message / Questions (Optional)</label>
+              <textarea 
+                id="formMessage" 
+                name="message" 
+                class="form-control" 
+                rows="4" 
+                placeholder="I would like to know the monthly membership fee and trial timings..."
+              ></textarea>
+            </div>
+
+            <button type="submit" class="btn btn-whatsapp btn-block" id="formSubmitBtn">
+              <svg class="icon-inline" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91C2.13 13.66 2.59 15.36 3.45 16.86L2.05 22L7.3 20.62C8.75 21.41 10.38 21.83 12.04 21.83C17.5 21.83 21.95 17.38 21.95 11.92C21.95 9.27 20.92 6.78 19.05 4.91C17.18 3.03 14.69 2 12.04 2M12.05 3.67C14.25 3.67 16.31 4.53 17.87 6.09C19.42 7.65 20.28 9.72 20.28 11.92C20.28 16.46 16.58 20.15 12.04 20.15C10.56 20.15 9.11 19.76 7.85 19L7.55 18.83L4.43 19.65L5.26 16.61L5.06 16.29C4.24 14.99 3.81 13.47 3.81 11.91C3.81 7.37 7.5 3.67 12.05 3.67M9.13 7.39C8.95 7.39 8.76 7.4 8.59 7.41C8.36 7.42 8.16 7.5 8 7.73C7.79 7.96 7.21 8.5 7.21 9.61C7.21 10.72 8.02 11.78 8.13 11.94C8.24 12.1 9.71 14.36 11.96 15.33C13.83 16.14 14.21 15.98 14.62 15.94C15.03 15.9 15.95 15.39 16.14 14.86C16.33 14.33 16.33 13.88 16.27 13.78C16.21 13.68 16.06 13.62 15.83 13.5C15.6 13.38 14.47 12.83 14.26 12.75C14.05 12.67 13.9 12.63 13.75 12.86C13.6 13.09 13.17 13.62 13.04 13.78C12.91 13.94 12.78 13.96 12.55 13.84C12.32 13.72 11.58 13.48 10.7 12.7C10.01 12.09 9.55 11.33 9.42 11.11C9.29 10.88 9.4 10.76 9.52 10.64C9.62 10.53 9.75 10.36 9.87 10.22C9.98 10.08 10.02 9.98 10.1 9.82C10.18 9.66 10.14 9.53 10.08 9.41C10.02 9.29 9.57 8.18 9.38 7.72C9.2 7.28 9.02 7.34 8.87 7.34L8.59 7.34H9.13Z"/>
+              </svg>
+              <span>Send Inquiry via WhatsApp</span>
+            </button>
+            <p class="form-disclaimer">No account required. Directly opens WhatsApp with your pre-filled inquiry.</p>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==============================================
+       FOOTER
+       ============================================== -->
+  <footer class="site-footer">
+    <div class="container footer-container">
+      <div class="footer-grid">
+        <!-- Col 1: Brand & Bio -->
+        <div class="footer-col brand-col">
+          <a href="#home" class="footer-logo">
+            <span class="logo-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M6 5v14M18 5v14M2 9v6M22 9v6M6 12h12M2 12h4M18 12h4" />
+              </svg>
+            </span>
+            <span class="logo-text">[GYM <span class="text-accent">NAME</span>]</span>
+          </a>
+          <p class="footer-desc">
+            A premium modern fitness center committed to helping you build your strongest self through science-backed training, top tier equipment and community motivation.
+          </p>
+          <div class="social-links">
+            <a href="[INSTAGRAM LINK]" class="social-btn" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <rect x="2" y="2" width="20" height="20" rx="5" ry="5"/>
+                <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/>
+                <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/>
+              </svg>
+            </a>
+            <a href="[FACEBOOK LINK]" class="social-btn" target="_blank" rel="noopener noreferrer" aria-label="Facebook">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/>
+              </svg>
+            </a>
+            <a href="https://youtube.com" class="social-btn" target="_blank" rel="noopener noreferrer" aria-label="YouTube">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M22.54 6.42a2.78 2.78 0 0 0-1.94-2C18.88 4 12 4 12 4s-6.88 0-8.6.46a2.78 2.78 0 0 0-1.94 2A29 29 0 0 0 1 11.75a29 29 0 0 0 .46 5.33A2.78 2.78 0 0 0 3.4 19.1c1.72.46 8.6.46 8.6.46s6.88 0 8.6-.46a2.78 2.78 0 0 0 1.94-2 29 29 0 0 0 .46-5.25 29 29 0 0 0-.46-5.33z"/>
+                <polygon points="9.75 15.02 15.5 11.75 9.75 8.48 9.75 15.02"/>
+              </svg>
+            </a>
+          </div>
+        </div>
+
+        <!-- Col 2: Quick Links -->
+        <div class="footer-col">
+          <h4 class="footer-heading">Quick Links</h4>
+          <ul class="footer-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About Us</a></li>
+            <li><a href="#programs">Workout Programs</a></li>
+            <li><a href="#facilities">Facilities</a></li>
+            <li><a href="#trainers">Meet Trainers</a></li>
+            <li><a href="#membership">Membership Plans</a></li>
+            <li><a href="#faq">FAQ</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+
+        <!-- Col 3: Programs -->
+        <div class="footer-col">
+          <h4 class="footer-heading">Programs</h4>
+          <ul class="footer-links">
+            <li><a href="#programs">Strength Training</a></li>
+            <li><a href="#programs">Weight Loss</a></li>
+            <li><a href="#programs">Muscle Building</a></li>
+            <li><a href="#programs">Personal Coaching</a></li>
+            <li><a href="#programs">Functional Agility</a></li>
+            <li><a href="#programs">Cardio & Conditioning</a></li>
+          </ul>
+        </div>
+
+        <!-- Col 4: Contact Info -->
+        <div class="footer-col">
+          <h4 class="footer-heading">Contact Details</h4>
+          <div class="footer-contact-item">
+            <span class="f-label">Address:</span>
+            <span class="f-val">[GYM ADDRESS]</span>
+          </div>
+          <div class="footer-contact-item">
+            <span class="f-label">Phone:</span>
+            <span class="f-val">[PHONE NUMBER]</span>
+          </div>
+          <div class="footer-contact-item">
+            <span class="f-label">WhatsApp:</span>
+            <span class="f-val">[WHATSAPP NUMBER]</span>
+          </div>
+          <div class="footer-contact-item">
+            <span class="f-label">Email:</span>
+            <span class="f-val">[EMAIL ADDRESS]</span>
+          </div>
+          <div class="footer-contact-item">
+            <span class="f-label">Hours:</span>
+            <span class="f-val">Mon-Sat: 6am - 10pm | Sun: 7am - 1pm</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; 2026 [GYM NAME]. All Rights Reserved. Designed for performance and results.</p>
+        <p class="footer-subtext">Static responsive website ready for GitHub Pages, Netlify or Vercel.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ==============================================
+       FLOATING WHATSAPP BUTTON (BOTTOM-RIGHT)
+       ============================================== -->
+  <a 
+    href="#" 
+    class="floating-whatsapp" 
+    id="floatingWhatsappBtn" 
+    aria-label="Chat on WhatsApp"
+  >
+    <span class="whatsapp-tooltip">Chat with us</span>
+    <span class="whatsapp-icon-circle">
+      <svg viewBox="0 0 24 24" fill="currentColor">
+        <path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91C2.13 13.66 2.59 15.36 3.45 16.86L2.05 22L7.3 20.62C8.75 21.41 10.38 21.83 12.04 21.83C17.5 21.83 21.95 17.38 21.95 11.92C21.95 9.27 20.92 6.78 19.05 4.91C17.18 3.03 14.69 2 12.04 2M12.05 3.67C14.25 3.67 16.31 4.53 17.87 6.09C19.42 7.65 20.28 9.72 20.28 11.92C20.28 16.46 16.58 20.15 12.04 20.15C10.56 20.15 9.11 19.76 7.85 19L7.55 18.83L4.43 19.65L5.26 16.61L5.06 16.29C4.24 14.99 3.81 13.47 3.81 11.91C3.81 7.37 7.5 3.67 12.05 3.67M9.13 7.39C8.95 7.39 8.76 7.4 8.59 7.41C8.36 7.42 8.16 7.5 8 7.73C7.79 7.96 7.21 8.5 7.21 9.61C7.21 10.72 8.02 11.78 8.13 11.94C8.24 12.1 9.71 14.36 11.96 15.33C13.83 16.14 14.21 15.98 14.62 15.94C15.03 15.9 15.95 15.39 16.14 14.86C16.33 14.33 16.33 13.88 16.27 13.78C16.21 13.68 16.06 13.62 15.83 13.5C15.6 13.38 14.47 12.83 14.26 12.75C14.05 12.67 13.9 12.63 13.75 12.86C13.6 13.09 13.17 13.62 13.04 13.78C12.91 13.94 12.78 13.96 12.55 13.84C12.32 13.72 11.58 13.48 10.7 12.7C10.01 12.09 9.55 11.33 9.42 11.11C9.29 10.88 9.4 10.76 9.52 10.64C9.62 10.53 9.75 10.36 9.87 10.22C9.98 10.08 10.02 9.98 10.1 9.82C10.18 9.66 10.14 9.53 10.08 9.41C10.02 9.29 9.57 8.18 9.38 7.72C9.2 7.28 9.02 7.34 8.87 7.34L8.59 7.34H9.13Z"/>
+      </svg>
+    </span>
+  </a>
+
+  <!-- ==============================================
+       BACK TO TOP BUTTON
+       ============================================== -->
+  <button type="button" class="back-to-top" id="backToTopBtn" aria-label="Back to top">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+      <path d="M18 15l-6-6-6 6"/>
+    </svg>
+  </button>
+
+  <!-- JavaScript -->
+  <script src="script.js"></script>
+</body>
+</html>
